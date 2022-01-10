@@ -1,0 +1,422 @@
+@media (max-width: 170em) {
+  .homepage {
+    height: 104rem;
+  }
+  .section-contact {
+    height: 96rem;
+  }
+}
+
+@media (max-width: 120em) {
+  .homepage {
+    height: 90rem;
+  }
+  .section-contact {
+    height: 82rem;
+  }
+}
+
+@media (max-width: 90em) {
+  html {
+    font-size: 57%;
+  }
+  .homepage {
+    height: 90rem;
+  }
+  .section-contact {
+    height: 82rem;
+  }
+}
+/*************************/
+/* BELOW 1200px (Landscape Tablets) */
+/*************************/
+@media (max-width: 75em) {
+  html {
+    font-size: 53%;
+  }
+  .homepage {
+    height: 96rem;
+  }
+  .section-contact {
+    height: 88rem;
+  }
+}
+
+@media (max-width: 69em) {
+  html {
+    font-size: 50%;
+  }
+  .contact-subheader {
+    font-size: 3rem;
+  }
+}
+
+/*************************/
+/* BELOW 960px (Tablets) */
+/*************************/
+@media (max-width: 60em) {
+  html {
+    font-size: 45%;
+  }
+
+  /* MOBILE NAV */
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 999999;
+  }
+
+  .main-nav {
+    background-color: rgba(226, 226, 226, 0.9);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* HIDE NAV */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+    color: #507a82;
+  }
+
+  .heading-main {
+    font-size: 12rem;
+  }
+  .subheading-main {
+    font-size: 4rem;
+  }
+  .reverb-link {
+    height: 4.8rem;
+    width: 16.4rem;
+  }
+  .insta-link {
+    height: 4.8rem;
+    width: 4.8rem;
+  }
+  .about-body {
+    margin-left: 5.4rem;
+    margin-right: 5.4rem;
+    text-align: center;
+  }
+  .section-gallery {
+    height: 104rem;
+  }
+  .caption-container {
+    font-size: 3.2rem;
+  }
+  .contact-header {
+    padding-bottom: 1.8rem;
+  }
+  .contact-subheader {
+    display: none;
+  }
+  .cta-form {
+    max-width: 80rem;
+  }
+  .cta-form label {
+    font-size: 3rem;
+  }
+  .example-text label {
+    font-size: 2rem;
+  }
+  .form-container {
+    grid-template-columns: 1fr;
+  }
+  .name-container {
+    padding-left: 0;
+  }
+  .email-container {
+    padding-right: 0;
+  }
+  textarea {
+    font-size: 2.4rem;
+  }
+  textarea::placeholder {
+    font-size: 2.6rem;
+  }
+
+  #submit {
+    padding: 1.8rem 4.2rem;
+    font-size: 3.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+  .copy-col {
+    font-size: 1.6rem;
+  }
+  .instagram-link {
+    height: 4.8rem;
+    width: 4.8rem;
+  }
+}
+
+/*************************/
+/* BELOW 670px (Sm Tablets) */
+/*************************/
+@media (max-width: 42em) {
+  .homepage {
+    height: 72rem;
+  }
+  .heading-main {
+    font-size: 9.4rem;
+  }
+  .subheading-main {
+    font-size: 3.4rem;
+  }
+  .about-header {
+    font-size: 8rem;
+  }
+  .about-body {
+    margin-right: 2.4rem;
+    margin-left: 2.4rem;
+  }
+  .section-gallery {
+    height: 88rem;
+  }
+  .gallery-header {
+    font-size: 8rem;
+  }
+  .container {
+    width: 64rem;
+    height: 36rem;
+  }
+  .demo {
+    height: 14.4rem;
+  }
+  .contact-header {
+    font-size: 8rem;
+  }
+  .cta-form {
+    max-width: 60rem;
+  }
+  #full-name {
+    height: 4.8rem;
+    width: 30rem;
+  }
+  #email {
+    height: 4.8rem;
+    width: 30rem;
+  }
+  textarea {
+    width: 48rem;
+    height: 16rem;
+  }
+  .instagram-link {
+    padding-left: 0.6rem;
+  }
+}
+
+/*************************/
+/* BELOW 510px (Mobiles) */
+/*************************/
+@media (max-width: 32em) {
+  .homepage {
+    height: 48rem;
+  }
+  .heading-main {
+    font-size: 7.4rem;
+    padding-bottom: 1.2rem;
+  }
+  .subheading-main {
+    font-size: 2.2rem;
+  }
+  .about-header {
+    font-size: 6rem;
+  }
+  .about-body {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+
+  .section-gallery {
+    height: 66rem;
+  }
+  .gallery-header {
+    font-size: 8rem;
+  }
+  .container {
+    width: 44rem;
+    height: 30rem;
+  }
+  .caption-container {
+    font-size: 2rem;
+  }
+  .demo {
+    height: 10.8rem;
+  }
+  .contact-header {
+    font-size: 8rem;
+  }
+  .cta-form {
+    max-width: 45rem;
+  }
+
+  textarea {
+    width: 30rem;
+  }
+  .footer {
+    padding: 0;
+  }
+
+  .copy-col {
+    float: left;
+    padding-left: 1.2rem;
+  }
+  .social-col {
+    float: right;
+  }
+}
+
+/*************************/
+/* BELOW 425px (Mobiles) */
+/*************************/
+@media (max-width: 27em) {
+  .homepage {
+    height: 36rem;
+  }
+  .heading-main {
+    font-size: 6.2rem;
+  }
+  .subheading-main {
+    font-size: 2rem;
+  }
+  .about-header {
+    font-size: 4.8rem;
+  }
+  .about-body {
+    margin-right: 1.2rem;
+    margin-left: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .section-gallery {
+    height: 60rem;
+  }
+  .gallery-header {
+    font-size: 4.8rem;
+  }
+
+  .contact-header {
+    font-size: 4.8rem;
+  }
+}
+
+/*************************/
+/* BELOW 365px (Mobiles) */
+/*************************/
+@media (max-width: 23em) {
+  .homepage {
+    height: 28rem;
+  }
+  .heading-main {
+    font-size: 5.4rem;
+  }
+  .subheading-main {
+    font-size: 2rem;
+  }
+  .about-header {
+    font-size: 4rem;
+  }
+  .about-body {
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
+  }
+
+  .gallery-header {
+    font-size: 4rem;
+  }
+
+  .contact-header {
+    font-size: 4rem;
+  }
+}
+
+/*************************/
+/* FIXING SAFARI FLEX-BOX GAP */
+/*************************/
+
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-faces {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meal-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}

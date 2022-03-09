@@ -78,7 +78,7 @@
 }
 
 .homepage {
-  height: 90rem;
+  height: 100vh;
   background-image: linear-gradient(to right bottom, #2050595d, #507a823f),
     url("../images/guitarbackground.webp");
   position: relative;
